@@ -1,0 +1,66 @@
+/*Exercise 3 External CSS*/
+
+h1.h1external{
+	color: red;
+	margin-left: 2cm;
+}
+h2.h2external{
+	color: red;
+	margin-left: 4cm;
+}
+p.pexternal{
+	text-indent: 2cm;
+	color: darkred;
+	margin-left: 6cm
+}
+
+
+/*Exercise 5 External CSS*/
+div.artistEx{
+	font-size: 14px;
+	font-family: arial;
+	font-weight: bold;
+	color:Moccasin;
+}
+div.songEx{
+	font-size: 14px;
+	font-family: arial;
+	color:Khaki;
+}
+div.albumEx{
+	font-size: 12px;
+	font-family: arial;
+	color:Khaki;
+}
+div.yearEx{
+	font-size: 12px;
+	font-family: arial;
+	font-weight: bold;
+	color:ivory;
+}
+div.backEx{
+	background-color: chocolate;
+}
+div.verseEx{
+	font-size: 14px;
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	color:gold;
+	margin-left: 2cm;
+	margin-right: 2cm;
+}
+div.chorusEx{
+	font-size: 14px;
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	font-style: italic;
+	color:gold;
+	margin-left: 4cm;
+	margin-right: 4cm;
+}
+
+span.unique{
+	font-weight: bold;
+	font-style: italic;
+}
+

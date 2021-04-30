@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="cw2css.css">
+	<title>University of Georgia State Example on embedded style sheets</title>
+	<!--Exercise 1
+		Fixed the error of no ending quotation on font-family for body and margin-left not having a dash in header css
+	-->
+	<style type="text/css">
+		/* Exercise 1 CSS Internal */
+		body{
+			font-family: "times new roman";
+			margin-left: 20%;
+			margin-right: 20%;
+			text-align: justify;
+			background: ivory; color: darkred;
+		}
+		
+		p{
+			text-indent: 2cm;
+		}
+
+		h1, h2, h3{
+			color: darkred; margin-left: 2cm;
+		}
+		/* Exercise 4 Internal CSS */
+		div.exercise2{
+			margin-left: 20%;
+			margin-right: 20%;
+			float: right;
+			background-color: green;
+			clear: both;
+		}
+		div.artist{
+			font-size: 14px;
+			font-family: arial;
+			font-weight: bold;
+			color:Moccasin;
+		}
+		div.song{
+			font-size: 14px;
+			font-family: arial;
+			color:Khaki;
+		}
+		div.album{
+			font-size: 12px;
+			font-family: arial;
+			color:Khaki;
+		}
+		div.year{
+			font-size: 12px;
+			font-family: arial;
+			font-weight: bold;
+			color:ivory;
+		}
+		div.back{
+			background-color: chocolate;
+		}
+		div.verse{
+			font-size: 14px;
+			font-family: Trebuchet MS;
+			font-weight: bold;
+			color:gold;
+			margin-left: 2cm;
+			margin-right: 2cm;
+		}
+		div.chorus{
+			font-size: 14px;
+			font-family: Trebuchet MS;
+			font-weight: bold;
+			font-style: italic;
+			color:gold;
+			margin-left: 4cm;
+			margin-right: 4cm;
+		}
+		div.exercise6{
+			color: black;
+			background-color: lime;
+			font-size: 30px;
+			margin-left: 20%;
+			margin-right:20%;
+		}
+		/* Exercise 3 Internal CSS */
+		h1.h1internal{
+			color: red;
+			margin-left: 2cm;
+		}
+		h2.h2internal{
+			color: red;
+			margin-left: 4cm;
+		}
+		p.pinternal{
+			text-indent: 2cm;
+			color: darkred;
+			margin-left: 6cm
+		}
+		span.unique{
+			font-weight: bold;
+			font-style: italic;
+			color: red;
+		}
+
+
+	</style>
+</head>
+<body>
+		<h1>Exercise 1</h1>
+		<p style="text-indent: 2cm; color: red;">
+			This paragraph has been formatted using the in-line style command
+		</p>
+		<p>
+			This paragraph has not been formatted using the in-line style command.
+		</p>
+		<div class="exercise2">
+			<h2>Exercise 2</h2>
+			<p>The css for body's font-family has an opening quotation mark but no end quotation mark. The margin-left is not able to be processed as the quotation is never ended. The css style marginleft for headers does not have a dash between the two words. This is an incorrect way of using margin-left.</p>
+		</div>
+		<h3>Exercise 3</h3>
+		<div class="exercise3">
+			<h1>Inline CSS</h1>
+			<h1 style="color: red; margin-left: 2cm">h1 heading</h1>
+			<h2 style="color: red; margin-left: 4cm">h2 subheading</h2>
+			<p style="text-indent: 2cm; color: darkred; margin-left: 6cm">Paragraph 1</p>
+			<p style="text-indent: 2cm; color: darkred; margin-left: 6cm">Paragraph 2</p>
+			<h2 style="color: red; margin-left: 4cm">h2 subheading</h2>
+			<p style="text-indent: 2cm; color: darkred; margin-left: 6cm">Paragraph 1 </p>
+			<h1>Internal CSS</h1>
+			<h1 class="h1internal">h1 heading</h1>
+			<h2 class="h2internal">h2 subheading</h2>
+			<p class="pinternal">Paragraph 1</p>
+			<p class="pinternal">Paragraph 2</p>
+			<h2 class="h2internal">h2 subheading</h2>
+			<p class="pinternal">Paragraph 1 </p>
+			<h1>External CSS</h1>
+			<h1 class="h1external">h1 heading</h1>
+			<h2 class="h2external">h2 subheading</h2>
+			<p class="pexternal">Paragraph 1</p>
+			<p class="pexternal">Paragraph 2</p>
+			<h2 class="h2external">h2 subheading</h2>
+			<p class="pexternal">Paragraph 1 </p>
+		</div>
+		<h4>Exercise 4</h4>
+		<div class="back">
+			<div class="artist">
+				<p>Wiz Khalifa</p>
+			</div>
+			<div class="song">
+				<p>See You Again</p>
+			</div>
+			<div class="album">
+				<p>Furious 7: Original Motion Picture Soundtrack</p>
+			</div>
+			<div class="year">
+				<p>2015</p>
+			</div>
+			<div class="chorus">
+				<p>It's been a long day without you, my friend
+					And I'll tell you all about it when I see you again
+					We've come a long way from where we began
+					Oh, I'll tell you all about it when I see you again
+					When I see you again
+				</p>
+			</div>
+			<div class="verse">
+				<p>Damn, who knew?
+					All the planes we flew, good things we been through
+					That I'd be standing right here talking to you
+					'Bout another path, I know we loved to hit the road and laugh
+					But something told me that it wouldn't last
+					Had to switch up, look at things different, see the bigger picture
+					Those were the days, hard work forever pays
+					Now I see you in a better place, uh
+					How can we not talk about family
+					When family's all that we got?
+					Everything I went through
+					You were standing there by my side
+					And now you gon' be with me for the last ride
+					</p>
+			</div>
+			<div class="chorus">
+				<p>It's been a long day without you, my friend
+					And I'll tell you all about it when I see you again
+					We've come a long way from where we began
+					Oh, I'll tell you all about it when I see you again
+					When I see you again
+					Aah oh, aah oh
+					Wooooh-oh-oh-oh-oh-oh
+					Yeah
+				</p>
+			</div>
+			<div class="verse">
+				<p>First, you both go out your way and the vibe is feeling strong
+					And what's small turned to a friendship, a friendship turned to a bond
+					And that bond will never be broken, the love will never get lost
+					And when brotherhood come first, then the line will never be crossed
+					Established it on our own when that line had to be drawn
+					And that line is what we reached, so remember me when I'm gone
+					How can we not talk about family
+					When family's all that we got?
+					Everything I went through
+					You were standing there by my side
+					And now you gon' be with me for the last ride
+					</p>
+			</div>
+			<div class="chorus">
+				<p>So let the light guide your way, yeah
+					Hold every memory as you go
+					And every road you take
+					Will always lead you home, home
+					It's been a long day without you, my friend
+					And I'll tell you all about it when I see you again
+					We've come a long way from where we began
+					Oh, I'll tell you all about it when I see you again
+					When I see you again
+					Aah oh, aah oh
+					Wooooh-oh-oh-oh-oh-oh
+					Yeah
+				</p>
+			</div>
+		</div>
+		<h4>Exercise 5</h4>
+		<div class="backEx">
+			<div class="artistEx">
+				<p>Wiz Khalifa</p>
+			</div>
+			<div class="songEx">
+				<p>See You Again</p>
+			</div>
+			<div class="albumEx">
+				<p>Furious 7: Original Motion Picture Soundtrack</p>
+			</div>
+			<div class="yearEx">
+				<p>2015</p>
+			</div>
+			<div class="chorusEx">
+				<p>It's been a long day without you, my friend
+					And I'll tell you all about it when I see you again
+					We've come a long way from where we began
+					Oh, I'll tell you all about it when I see you again
+					When I see you again
+				</p>
+			</div>
+			<div class="verseEx">
+				<p>Damn, who knew?
+					All the planes we flew, good things we been through
+					That I'd be standing right here talking to you
+					'Bout another path, I know we loved to hit the road and laugh
+					But something told me that it wouldn't last
+					Had to switch up, look at things different, see the bigger picture
+					Those were the days, hard work forever pays
+					Now I see you in a better place, uh
+					How can we not talk about family
+					When family's all that we got?
+					Everything I went through
+					You were standing there by my side
+					And now you gon' be with me for the last ride
+					</p>
+			</div>
+			<div class="chorusEx">
+				<p>It's been a long day without you, my friend
+					And I'll tell you all about it when I see you again
+					We've come a long way from where we began
+					Oh, I'll tell you all about it when I see you again
+					When I see you again
+					Aah oh, aah oh
+					Wooooh-oh-oh-oh-oh-oh
+					Yeah
+				</p>
+			</div>
+			<div class="verseEx">
+				<p>First, you both go out your way and the vibe is feeling strong
+					And what's small turned to a friendship, a friendship turned to a bond
+					And that bond will never be broken, the love will never get lost
+					And when brotherhood come first, then the line will never be crossed
+					Established it on our own when that line had to be drawn
+					And that line is what we reached, so remember me when I'm gone
+					How can we not talk about family
+					When family's all that we got?
+					Everything I went through
+					You were standing there by my side
+					And now you gon' be with me for the last ride
+					</p>
+			</div>
+			<div class="chorusEx">
+				<p>So let the light guide your way, yeah
+					Hold every memory as you go
+					And every road you take
+					Will always lead you home, home
+					It's been a long day without you, my friend
+					And I'll tell you all about it when I see you again
+					We've come a long way from where we began
+					Oh, I'll tell you all about it when I see you again
+					When I see you again
+					Aah oh, aah oh
+					Wooooh-oh-oh-oh-oh-oh
+					Yeah
+				</p>
+			</div>
+		</div>
+		<div class="exercise6">
+			<h6>Exercise 6</h6>
+			<p>
+				The website will contain a placeholder for an image of the class/professor using the <span class="unique"> img tag</span> at the very top of the page with their name or class name under it using a <span class="unique">h1-h6 header</span>. The <span class="unique">table</span> will be used to provide the students with a schedule of how the classwork will be distributed and around what time along with any links to assignments that will be posted later in the semester using the <span class="unique">a tag</span>. The <span class="unique">link tag</span> will be used to incorporate an external css file into the website so that there will be a foundation for all of the webpages. The <span class="unique">style tag</span> will be used for each professor to decorate their website in a unique way. The <span class="unique">ol and ul tags</span> will list out the grade percentages for each part of the class as well as the class rules that students need to follow. The <span class="unique">title tag</span> allows for students to easily figure out which tab they need to click for which website by having the teachers/class name as the title. Each professor can use the <span class="unique">p tag</span> to introduce the class or themselves as well as provide any information they desire about the class. Using these tags each professor will be able to follow a foundational structure for the school while also allowing each professor to uniquely decorate their website. Since each website will be based off a certain style, the students will not have to spend minutes looking around the website to figure out where everything is located.
+			</p>
+			<ol>
+				<li>img tag</li>
+				<li>h1-h6 tag</li>
+				<li>table tag</li>
+				<li>a tag</li>
+				<li>link tag</li>
+				<li>style tag</li>
+				<li>ol tag</li>
+				<li>ul tag</li>
+				<li>title tag</li>
+				<li>p tag</li>
+			</ol>
+		</div>
+
+
+</body>
+</html>
