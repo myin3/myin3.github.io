@@ -1,0 +1,143 @@
+/*
+	Name: Matthew Yin
+	Section: Group N9
+	Description: External CSS page for tmnt.html
+	File Contents: tmnt.html, movie.css, rotten.gif, fresh.gif, background.png, banner.png, 
+	bannerbackground.png, critic.gif, css_validator.png, generaloverview.png, html_validator.png 
+	rottenbackground.png, rottenbig.png, text.txt
+*/
+
+
+body{
+	font-family: "Verdana";
+	background-image: url("https://codd.cs.gsu.edu/~myin3/WP/HW/2/background.png");
+	font-size: 8pt;
+	margin: 0px;
+	padding: 0px;
+}
+div{
+	margin: 0px;
+	padding: 0px;
+}
+
+main{
+	width: 800px;
+	margin: auto;
+	border-style: solid;
+	border-width: 4px;
+	border-color: gray;
+}
+img#banner{
+	height: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+header{
+	width: auto;
+	background-image: url("https://codd.cs.gsu.edu/~myin3/WP/HW/2/bannerbackground.png");
+	background-repeat: repeat;
+	height: 50px;
+}
+h1#moviename{
+	font-size: 24pt;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-align: center;
+}
+div.content{
+	display: flex;
+}
+div#left{
+	float: left;
+	width: 550px;
+}
+div#rating{
+	height: 83px;
+	background-image: url("https://codd.cs.gsu.edu/~myin3/WP/HW/2/rottenbackground.png");
+	background-repeat: repeat;
+}
+div#rating img{
+	float: left;
+}
+div#rating h1{
+	font-size: 48pt;
+	color: red;
+	font-weight: bold;
+	margin: 0px;
+}
+div#rating span{
+	color: white;
+	font-size: 8pt;
+	font-weight: normal;
+}
+
+div#reviews{
+	display: flex;
+	width: 100%;
+}
+
+div#left-column, div#right-column{
+	flex-basis: 47%;
+	margin-top: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+}
+
+div#left-column{
+	margin-left: 2%;
+}
+
+div.quote{
+	font-weight: bold;
+	font-size: 8pt;
+	background-color: #E1D697;
+	border-style: solid;
+	border-width: 2px;
+	border-color: gray;
+	padding: 8px;
+	margin-bottom: 2%;
+	overflow: auto;
+}
+
+div.quote img{
+	float: left;
+	padding-right: 5px;
+}
+
+div.reviewer{
+	font-style: italic;
+	margin-bottom: 3em;
+}
+div.reviewer img{
+	float: left;
+	margin-right: 5px;
+}
+div#right{
+	width: 250px;
+	background-color: #A2B964;
+}
+div#GeneralOverview{
+	padding: 10px;
+	font-size: 8pt;
+	font-family:sans-serif;
+	
+
+}
+dt{
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+
+div#footer{
+	background-color: #A2B964;
+	padding: 5px;
+	text-align: center;
+}
+
+div.validator{
+	position: fixed;
+	bottom: 5px;
+	right: 0px;
+}

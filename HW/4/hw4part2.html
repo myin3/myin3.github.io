@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="match.css">
+	<meta charset="utf-8">
+	<title>Memory Game</title>
+</head>
+<body>
+	<a href="hw4part1.html"><h2>Part A</h2></a>
+	<header>
+		<form>
+			<fieldset>
+				<legend>Memory Game</legend>
+				<p>Welcome! This is a memory game to test your memory. You the player will have to flip up two cards and see if they are matching pairs, if they aren't the two cards must be flipped back down. If the two are a match then keep them flipped up and flip two more cards and check if they are a match. Continue this routine until all cards are matched with it's counterpart. There are three difficulties: Easy, Medium, and Hard. The Easy mode provides 3 seconds to memorize the cards locations, Medium provides 5 seconds, and Hard is 8 seconds. The level of difficulty also provides more cards with easy having 8 matches, medium with 10 matches, and hard with 12 matches. Each difficulty has a certain time period to beat the game. Easy allows for 120 seconds, Medium is 150 seconds, and Hard is 180 seconds. If you want to play again, first click the reset button then choose a difficulty to play and click Play again.</p>
+				<label>Difficulty:</label>
+				<br/>
+				<input type="radio" id="1" name="diff" value="easy" checked="checked" />
+				<label for="1">Easy</label>
+				<input type="radio" id="2" name="diff" value="medium"/>
+				<label for="2">Medium</label>
+				<input type="radio" id="3" name="diff" value="hard"/>
+				<label for="3">Hard</label>
+				<br/><br/>
+				<div id="play">
+				<input type="button" name="play" value="Play" onclick="startGame(diff.value)">
+				</div>
+				<input type="button" name="reset" value="Reset" onclick="resetGame()">
+			</fieldset>
+		</form>
+	</header>
+	<h1></h1>
+	<div id="gameboard">
+		<script src="hw4part2.js"></script>
+	</div>
+	<div id="winner">Good Game! Do you want to play again?</div>
+	
+</body>
+</html>
